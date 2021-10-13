@@ -1,0 +1,12 @@
+ version: '3.3'
+ services:
+
+   simulador:
+     build:
+       dockerfile: Dockerfile
+       context: .
+     image: simulador
+     restart: on-failure
+     container_name: simulador
+     ports:
+       - "8080:8080"
